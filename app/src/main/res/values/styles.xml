@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основная тема приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+        <item name="backgroundColor">#FFFFFF</item> <!-- Светлый фон -->
+    </style>
+
+    <!-- Светлая тема -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+        <item name="backgroundColor">#FFFFFF</item> <!-- Светлый фон -->
+    </style>
+
+    <!-- Темная тема -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#BB86FC</item>
+        <item name="backgroundColor">#000000</item> <!-- Темный фон -->
+    </style>
+    <style name="DialogButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FF000000</item> <!-- Черный цвет текста -->
+    </style>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Переключатель темы -->
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тёмная тема"
+            android:padding="16dp" />
+
+        <!-- Сетка для игры "Крестики-нолики" -->
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp">
+
+            <Button android:id="@+id/button00" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 0,0"/>
+            <Button android:id="@+id/button01" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 0,1"/>
+            <Button android:id="@+id/button02" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 0,2"/>
+            <Button android:id="@+id/button10" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 1,0"/>
+            <Button android:id="@+id/button11" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 1,1"/>
+            <Button android:id="@+id/button12" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 1,2"/>
+            <Button android:id="@+id/button20" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 2,0"/>
+            <Button android:id="@+id/button21" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 2,1"/>
+            <Button android:id="@+id/button22" android:layout_width="80dp" android:layout_height="80dp"
+                android:backgroundTint="#FF6200EE" android:textColor="#FFFFFF"
+                android:contentDescription="Кнопка 2,2"/>
+
+        </GridLayout>
+
+        <!-- Кнопка для сброса игры -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Заново"
+            android:backgroundTint="#FFBB86FC"
+            android:textColor="#FFFFFF"
+            android:contentDescription="Кнопка сброса игры" />
+
+        <TextView
+            android:id="@+id/statisticsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Победы: 0, Поражения: 0, Ничьи: 0"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
